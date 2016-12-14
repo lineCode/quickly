@@ -1,0 +1,365 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\Quicker.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""l.KOR\\afxres.rc""      // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Quickly.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Quicker 정보"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "Quicker, 버전 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "확인",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_QUICKER_DIALOG DIALOGEX 0, 0, 79, 25
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT,5,5,69,12,ES_CENTER | ES_AUTOHSCROLL
+END
+
+IDD_SETUP_DLG DIALOGEX 0, 0, 263, 254
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE
+FONT 9, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,153,233,50,14
+    PUSHBUTTON      "취소",IDCANCEL,206,233,50,14
+    CONTROL         "Autostart",IDC_CHK_AUTOSTART,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,46,10
+    CONTROL         "Color",IDC_CHK_COLOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,22,31,10
+    CONTROL         "Transparent ",IDC_CHK_TRANSPARENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,38,56,10
+    EDITTEXT        IDC_EDT_FORETRNSPT,63,38,42,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDT_BACKTRNSPT,118,38,44,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "%",IDC_STATIC1,107,39,8,8
+    LTEXT           "%",IDC_STATIC2,163,39,8,8
+    CONTROL         "",IDC_LST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,73,249,152
+    LTEXT           "",IDC_STC_FORECOLOR,63,22,49,12
+    CONTROL         "Hotkey",IDC_CHK_HOTKEY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,55,38,10
+    COMBOBOX        IDC_CMB_MOD_KEY,63,54,74,93,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_STC_FONTCOLOR,119,22,49,12
+    EDITTEXT        IDC_EDT_SHORTCUT,141,54,64,13,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_RUNTIME,215,17,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | NOT WS_BORDER
+END
+
+IDD_CLIP_DLG DIALOGEX 0, 0, 466, 254
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+MENU IDR_MENU_CLIP
+FONT 9, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LST_SN,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,16,18,167,101
+    CONTROL         "",IDC_LST_CFTYPE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,20,147,154,77
+END
+
+IDD_DLG_VIEW DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDT_VIEW,146,32,127,101,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    CONTROL         "",IDC_RICHEDIT2,"RichEdit20W",WS_BORDER | WS_VSCROLL | WS_TABSTOP | 0x44,35,41,74,54
+    CONTROL         "",IDC_BMP_VIEW,"Static",SS_BLACKFRAME | WS_BORDER,47,106,63,25
+    SCROLLBAR       IDC_HSCRBAR,107,150,40,11
+    SCROLLBAR       IDC_VSCRBAR,199,136,10,40,SBS_VERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_QUICKER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 74
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 20
+    END
+
+    IDD_SETUP_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 247
+    END
+
+    IDD_CLIP_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 459
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 247
+    END
+
+    IDD_DLG_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_BOTTOM_LEFT         PNG                     "res\\BOTTOM_LEFT.png"
+IDB_BOTTOM_CENTER       PNG                     "res\\BOTTOM_LINE.png"
+IDB_BOTTOM_RIGHT        PNG                     "res\\BOTTOM_RIGHT.png"
+IDB_TOP_LEFT            PNG                     "res\\TOP_LEFT.png"
+IDB_TOP_CENTER          PNG                     "res\\TOP_LINE.png"
+IDB_TOP_RIGHT           PNG                     "res\\TOP_RIGHT.png"
+IDB_LEFT_BLOCK          PNG                     "res\\LEFT.png"
+IDB_LEFT_LINE           PNG                     "res\\LEFT_LINE.png"
+IDB_LEFT_TOP            PNG                     "res\\LEFT_TOP.png"
+IDB_RIGHT_BLOCK         PNG                     "res\\RIGHT.png"
+IDB_RIGHT_LINE          PNG                     "res\\RIGHT_LINE.png"
+IDB_RIGHT_TOP           PNG                     "res\\RIGHT_TOP.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_ITEM MENU 
+BEGIN
+    POPUP "아이템"
+    BEGIN
+        MENUITEM "수정",                          ID_EDIT
+        MENUITEM "삭제",                          ID_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "새 명령 추가",                     ID_NEW
+    END
+END
+
+IDR_MENU_NOITEM MENU 
+BEGIN
+    POPUP "노아이템"
+    BEGIN
+        MENUITEM "새 명령 추가",                     ID_NEW
+    END
+END
+
+IDR_MENU_CLIP MENU 
+BEGIN
+    POPUP "파일"
+    BEGIN
+        MENUITEM "클립보드 열기",                     ID_32779
+        MENUITEM "클립보드 저장",                     ID_32780
+    END
+    POPUP "보기"
+    BEGIN
+        MENUITEM "포멧뷰 보기/숨기기\tF5",              ID_CLIPITEM
+        MENUITEM "포멧뷰어 보기/숨기기\tF6",             ID_CLIPFORMAT
+        MENUITEM "최대화",                         ID_32782
+        MENUITEM "숨기기",                         ID_32783
+    END
+    POPUP "도움말"
+    BEGIN
+        MENUITEM "설명",                          ID_32784
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,14,128
+ PRODUCTVERSION 1,0,14,128
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "http://zextor.tistory.com"
+            VALUE "FileDescription", "Quickly Shell Command"
+            VALUE "FileVersion", "1, 0, 14, 128"
+            VALUE "InternalName", "Quickly"
+            VALUE "LegalCopyright", "Copyright (C) 2013 http://zextor.tistory.com"
+            VALUE "OriginalFilename", "Quickly"
+            VALUE "ProductName", "Quickly Shell Command"
+            VALUE "ProductVersion", "1, 0, 14, 128"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_BUTTON32785
+    BUTTON      ID_BUTTON32786
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR             BITMAP                  "res\\toolbar.bmp"
+IDB_BMP_CBITEM          BITMAP                  "res\\cbitem.bmp"
+IDB_BMP_CBFORMAT        BITMAP                  "res\\cbformat.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS 
+BEGIN
+    VK_F5,          ID_CLIPITEM,            VIRTKEY, NOINVERT
+    VK_F6,          ID_CLIPFORMAT,          VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "Quicker 정보(&A)..."
+    IDS_HOTKEY_FAIL         "바로 가기 키가 이미 등록되어 있습니다. 다른 키를 선택해주세요."
+    IDC_HORIZ_DLG           "UNIUE ID"
+    IDC_VERT_DLG            "UNIQUE ID"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\Quicker.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "l.KOR\afxres.rc"      // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
